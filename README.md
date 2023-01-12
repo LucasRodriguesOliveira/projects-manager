@@ -35,3 +35,8 @@ Em caso de qualquer dúvida, entre em contato comigo por e-mail: `lucasroliveira
 
 
 O Projeto de Front-end foi montado separado, vou atualizar posteriormente esse README com o repositório correto
+
+Caso não encontre o projeto front-end, recomendo fortemente utilizar um client de consumo de API tal como Postman ou Insomnia, sendo este último, recomendação pessoal.
+
+deixarei na raiz do projeto, um arquivo de configuração para testar o server utilizando insomnia
+`insomnia.config.json`
