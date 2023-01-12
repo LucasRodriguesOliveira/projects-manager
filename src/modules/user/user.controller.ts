@@ -19,8 +19,6 @@ export class UserController {
   public async login(
     @Body() { password, username }: LoginDto,
   ): Promise<string> {
-    console.log(username);
-    console.log(password);
     return this.userService.login(username, password);
   }
 }
