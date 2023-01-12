@@ -21,7 +21,7 @@ export class Project {
   @Column({ type: 'decimal' })
   cost: number;
 
-  @Column({ type: 'bit', default: 0 })
+  @Column({ default: false })
   done: boolean;
 
   @Column({ type: 'date' })
