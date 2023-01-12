@@ -40,3 +40,8 @@ Caso não encontre o projeto front-end, recomendo fortemente utilizar um client 
 
 deixarei na raiz do projeto, um arquivo de configuração para testar o server utilizando insomnia
 `insomnia.config.json`
+
+o projeto front-end pode ser encontrado por busca pelos repositórios com o nome `projects-manager-client`
+
+ou se preferir, basta clicar no link a seguir:
+[projects-manager-client](https://github.com/LucasRodriguesOliveira/projects-manager-client)
