@@ -35,12 +35,13 @@ export interface FindProjectResponseDto {
   cost: number;
   done: boolean;
   createdAt: Date;
+  zipCode: string;
   location: Location;
 }
 
 export class FindProjectResponse {
   static from(
-    { cost, createdAt, deadline, done, id, title }: Project,
+    { cost, createdAt, deadline, done, id, title, zipCode }: Project,
     location: Location,
   ): FindProjectResponseDto {
     return {
@@ -51,6 +52,7 @@ export class FindProjectResponse {
       id,
       location,
       title,
+      zipCode,
     };
   }
 }
