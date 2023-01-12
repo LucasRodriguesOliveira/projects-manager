@@ -1,73 +1,37 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# Project Manager
+Projeto com o intuito de demonstrar a capacidade de desenvolver uma API seguindo as instruções do desafio técnico
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Instalação
+Para realizar a instalação é necessário seguir os seguintes passos:
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- Clonar o repositório
+  - `git clone https://github.com/LucasRodriguesOliveira/projects-manager.git`
+- adicionar á raiz do projeto um arquivo `.env` parecido com o `.env.example`, suprindo o apresentado no `.env.example`
+- instalar as dependências
+  - `yarn` ou `npm i`
+  - Pode-se utilizar docker se preferir (`docker-compose up -d`)
+- e iniciar o projeto  com `yarn start` (se utilizou docker, a própria config já resolve por você :) )
 
-## Description
+### Possíveis erros
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+No enunciado dizia que deveria utilizar uma api para busca dos dados de CEP, entretanto o texto não estava completo com qual API deveria ser utilizada (também estava incluso que poderia utilizar qualquer outra de preferência). Tomei a liberdade e utilizei a BrasilAPI
 
-## Installation
+Em alguns pontos do enunciado, solicita que seja feito de forma X, como por exemplo, nomenclatura de rotas e de colunas de banco. Tomei a liberdade para montar de um jeito mais agradável na minha opinião, ex:
+ao invés de `zip_code`, montei `zipCode`
 
-```bash
-$ npm install
-```
+ao invés de rotas como:
+- `projects`
 
-## Running the app
+montei como:
+- `project`
 
-```bash
-# development
-$ npm run start
+entre outros pequenos detalhes que são apenas preferências pessoais
 
-# watch mode
-$ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
+O Projeto foi feito de forma simples, poderia ser incluído mais recursos tais como autenticação JWT, Testes Unitários e Integrados, CI/CD, entre outos, optei por manter como solicitado, apenas o MVP
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
+Em caso de qualquer dúvida, entre em contato comigo por e-mail: `lucasroliveira98@gmail.com`
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+O Projeto de Front-end foi montado separado, vou atualizar posteriormente esse README com o repositório correto
